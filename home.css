@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: royalblue;
+}
+
+.login-container {
+    text-align: center;
+    background-color: rgb(216, 116, 22);
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+.title_logregister {
+    font-size: 2rem;
+    color: rgb(48, 205, 98);
+}
+
+.input-box {
+    position: relative;
+    margin-top: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.input-box img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+}
+
+.buttonlogin {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.buttonlogin:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-message.hidden {
+    display: none;
+}
+
+.input-box.invalid input {
+    border: 1px solid red;
+}
